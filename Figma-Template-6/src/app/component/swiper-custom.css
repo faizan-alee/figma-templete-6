@@ -1,0 +1,50 @@
+/* Remove the blue outline on click */
+.swiper-button-next,
+.swiper-button-prev {
+    outline: none;
+}
+
+/* Position buttons on the sides */
+.swiper-button-next {
+    right: 10px;  /* Adjust this value to position it as needed */
+    color: #333;  /* Customize button color */
+}
+
+.swiper-button-prev {
+    left: 10px;  /* Adjust this value to position it as needed */
+    color: #333;  /* Customize button color */
+}
+
+/* Remove the focus outline (blue border) */
+.swiper-button-next:focus,
+.swiper-button-prev:focus {
+    outline: none;
+}
+/* swiper-custom.css */
+
+/* Center the image in the slide */
+.swiper-slide {
+    display: flex;
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;      /* Center content vertically */
+}
+
+/* Media query to adjust the Swiper for mobile devices */
+@media (max-width: 640px) {
+    .swiper-slide {
+        width: 100%;  /* Ensure slide takes full width on mobile */
+    }
+}
+
+/* Media query for medium and large devices */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .swiper-slide {
+        width: 50%;  /* Adjust width for tablets */
+    }
+}
+
+@media (min-width: 1025px) {
+    .swiper-slide {
+        width: 33.33%;  /* Adjust width for desktop */
+    }
+}
